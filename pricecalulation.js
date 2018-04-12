@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+  
     let DiscountArray = {};
     i = 0;
         function someFunction() {
@@ -235,8 +236,10 @@ $(document).ready(function(){
 
               if(words_string != ''){
                     $('#amountinword').empty().append(words_string+' only.'); 
+                    $('#amounttext').val(words_string+' only.').val();
               }else{
                $('#amountinword').empty().append(''); 
+               $('#amounttext').val('').val();
               }
       }
   
